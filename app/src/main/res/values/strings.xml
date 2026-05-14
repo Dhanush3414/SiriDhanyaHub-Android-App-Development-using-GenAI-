@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Siri-Dhanya Hub</string>
+    <string name="nav_mandi">Mandi</string>
+    <string name="nav_recipes">Recipes</string>
+    <string name="nav_health">Health</string>
+    <string name="nav_buy">Buy</string>
+    <string name="mandi_title">Mandi Watch</string>
+    <string name="recipe_title">Recipe Lab</string>
+    <string name="health_title">Health Benefits</string>
+    <string name="buy_title">Direct Buy</string>
+    <string name="loading">Loading…</string>
+    <string name="retry">Retry</string>
+</resources>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:paddingTop="28dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="🤖"
+                android:textSize="24sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AI Recipe Lab"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ — Powered by Gemini"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Gemini badge -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ Gemini"
+                android:textColor="@color/colorAccentLight"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp" />
+        </LinearLayout>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell me what millets you have — I'll suggest a recipe!"
+            android:textColor="#CCFFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="80dp">
+
+            <!-- Millet Selection Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌾 Select Your Available Millets"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Millet Checkboxes -->
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupMillets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="false">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipRagi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌾 Ragi"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipNavane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌿 Navane"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipSajje"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌻 Sajje"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipBaragu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🫘 Baragu"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipOodalu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌱 Oodalu"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipKorralu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌾 Korralu"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <!-- Meal Type -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🍽️ Meal Type"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupMealType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true"
+                        app:selectionRequired="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipBreakfast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌅 Breakfast"
+                            android:checked="true"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipLunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🍽️ Lunch"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipDinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌙 Dinner"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipSnack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🫙 Snack"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipDessert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🍮 Dessert"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            app:chipBackgroundColor="@color/colorSurface" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <!-- Generate Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGenerateRecipe"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="16dp"
+                        android:text="✨ Generate AI Recipe"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:cornerRadius="12dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Loading indicator -->
+            <LinearLayout
+                android:id="@+id/layoutLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🤖 Gemini is cooking up a recipe..."
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="13sp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+            <!-- AI Response Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAiResponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- AI Response Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="✨"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="AI Generated Recipe"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="8dp" />
+
+                        <!-- Share button -->
+                        <ImageView
+                            android:id="@+id/ivShareRecipe"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@android:drawable/ic_menu_share"
+                            android:tint="@color/colorPrimary"
+                            android:padding="4dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorDivider"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- AI Response Text -->
+                    <TextView
+                        android:id="@+id/tvAiResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="14sp"
+                        android:lineSpacingMultiplier="1.7" />
+
+                    <!-- Try Again Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTryAgain"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="16dp"
+                        android:text="🔄 Try Another Recipe"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:textAllCaps="false"
+                        app:backgroundTint="@color/colorSurface"
+                        app:cornerRadius="10dp"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Health Q&A Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💬 Ask About Millets"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp" />
+
+                    <EditText
+                        android:id="@+id/etQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. Is Ragi good for diabetes?"
+                        android:textColorHint="@color/colorTextHint"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="13sp"
+                        android:padding="12dp"
+                        android:background="@drawable/bg_week_stats"
+                        android:minLines="2"
+                        android:maxLines="3"
+                        android:inputType="textMultiLine"
+                        android:imeOptions="actionDone" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAskQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="10dp"
+                        android:text="💬 Ask Gemini"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        app:backgroundTint="@color/colorSecondary"
+                        app:cornerRadius="10dp" />
+
+                    <!-- Answer -->
+                    <TextView
+                        android:id="@+id/tvAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="13sp"
+                        android:lineSpacingMultiplier="1.6"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

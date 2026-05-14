@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8B4513</color>
+    <color name="colorPrimaryDark">#6B3410</color>
+    <color name="colorPrimaryLight">#C4622D</color>
+    <color name="colorPrimaryVariant">#A0522D</color>
+    <color name="colorSecondary">#2D5016</color>
+    <color name="colorSecondaryDark">#1E3A0E</color>
+    <color name="colorSecondaryLight">#4A7A25</color>
+    <color name="colorAccent">#D4A017</color>
+    <color name="colorAccentLight">#F0C040</color>
+    <color name="colorAccentDark">#A07A10</color>
+    <color name="colorBackground">#FDF5E6</color>
+    <color name="colorSurface">#F5E6C8</color>
+    <color name="colorSurfaceVariant">#EDD9A3</color>
+    <color name="colorCard">#FFFAF0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorTextPrimary">#3E2005</color>
+    <color name="colorTextSecondary">#7A5C3A</color>
+    <color name="colorTextHint">#B8966A</color>
+    <color name="colorOnBackground">#3E2005</color>
+    <color name="colorTrendUp">#2E7D32</color>
+    <color name="colorTrendDown">#C62828</color>
+    <color name="colorTrendStable">#F57F17</color>
+    <color name="colorTrendUpBg">#E8F5E9</color>
+    <color name="colorTrendDownBg">#FFEBEE</color>
+    <color name="colorTrendStableBg">#FFF8E1</color>
+    <color name="colorDivider">#E8D5B0</color>
+    <color name="colorBorder">#D4B896</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorBottomNavActive">#8B4513</color>
+    <color name="colorBottomNavInactive">#B8966A</color>
+</resources>
