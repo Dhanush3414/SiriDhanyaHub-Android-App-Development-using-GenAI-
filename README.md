@@ -6,7 +6,7 @@ Siri-Dhanya Hub is an AI-powered Android application developed to support millet
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 Millets are highly nutritious and environmentally sustainable crops, but many farmers and consumers lack proper awareness about market prices, farming guidance, and millet-based healthy food preparation.
 
@@ -22,7 +22,7 @@ The application combines Artificial Intelligence, Firebase services, and Android
 
 ---
 
-# ❗ Problem Statement
+#  Problem Statement
 
 Farmers growing millets in Karnataka often face challenges in accessing updated market prices from different cities and markets. Due to lack of digital awareness and centralized information systems, many small-scale farmers are unable to make profitable selling decisions.
 
@@ -36,7 +36,7 @@ There is a need for a smart digital platform that bridges the gap between farmer
 
 ---
 
-# 🎯 Objectives
+#  Objectives
 
 * Provide real-time millet market prices
 * Promote millet consumption and healthy food habits
@@ -47,15 +47,15 @@ There is a need for a smart digital platform that bridges the gap between farmer
 
 ---
 
-# 🚀 Features
+#  Features
 
-## 📈 Market Price Module
+##  Market Price Module
 
 * Displays millet prices from various cities/markets
 * Helps farmers compare prices before selling
 * Supports better agricultural decision-making
 
-## 🍲 Millet Recipe Module
+##  Millet Recipe Module
 
 * Provides recipes using:
 
@@ -66,19 +66,18 @@ There is a need for a smart digital platform that bridges the gap between farmer
 * Includes ingredients and preparation steps
 * Promotes healthy eating habits
 
-## 🤖 AI Chatbot Assistant
+##  AI Chatbot Assistant
 
 * Powered by Google Gemini API
 * Answers farming-related questions
 * Suggests recipes and agricultural guidance
 * Provides smart user interaction
 
-## 🔐 User Authentication
+##  User Authentication
 
 * Firebase Authentication support
-* Secure login and registration system
 
-## 📚 Awareness & Information Module
+##  Awareness & Information Module
 
 * Educational information about:
 
@@ -89,13 +88,13 @@ There is a need for a smart digital platform that bridges the gap between farmer
 
 ---
 
-# 🛠 Technologies Used
+#  Technologies Used
 
 ## Frontend
 
 * Android Studio
 * XML Layouts
-* Java / Kotlin
+* Kotlin
 
 ## Backend & Database
 
@@ -106,7 +105,6 @@ There is a need for a smart digital platform that bridges the gap between farmer
 ## AI & APIs
 
 * Google Gemini API
-* REST API Integration
 
 ## Libraries & Components
 
@@ -117,7 +115,7 @@ There is a need for a smart digital platform that bridges the gap between farmer
 
 ---
 
-# 📱 Software Requirements
+# Software Requirements
 
 * Android Studio Hedgehog or later
 * JDK 17+
@@ -127,7 +125,7 @@ There is a need for a smart digital platform that bridges the gap between farmer
 
 ---
 
-# 💻 Hardware Requirements
+#  Hardware Requirements
 
 * Minimum 4GB RAM
 * Intel i3 or higher processor
@@ -135,7 +133,7 @@ There is a need for a smart digital platform that bridges the gap between farmer
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 SiriDhanyaHub/
@@ -158,7 +156,7 @@ SiriDhanyaHub/
 
 ---
 
-# ⚙️ Installation Steps
+#  Installation Steps
 
 ## Step 1: Clone the Repository
 
@@ -208,11 +206,11 @@ Sync Project with Gradle Files
 ## Step 6: Run the Application
 
 * Connect Android device/emulator
-* Click Run ▶️
+* Click Run 
 
 ---
 
-# 🔑 Firebase Setup
+#  Firebase Setup
 
 Enable the following Firebase services:
 
@@ -220,13 +218,10 @@ Enable the following Firebase services:
 * Firebase Realtime Database
 * Firebase Firestore
 
-Authentication Methods:
-
-* Email/Password Login
 
 ---
 
-# 🤖 Gemini API Integration
+#  Gemini API Integration
 
 The application uses Google Gemini API for:
 
@@ -237,7 +232,7 @@ The application uses Google Gemini API for:
 
 ---
 
-# 📸 Screenshots
+#  Screenshots
 
 ## Home Screen
 
@@ -255,9 +250,18 @@ The application uses Google Gemini API for:
 
 * AI-powered assistant interface
 
+## Health Benefits
+
+* Provide health benefits od Siri-Dhanya
+
+## Buy
+
+* Contact details of Mandi Farmers
+
+
 ---
 
-# 📊 Expected Outcomes
+#  Expected Outcomes
 
 * Better market awareness for farmers
 * Increased millet consumption
@@ -267,7 +271,7 @@ The application uses Google Gemini API for:
 
 ---
 
-# 🌱 Future Enhancements
+#  Future Enhancements
 
 * Multi-language support
 
@@ -289,7 +293,7 @@ The application uses Google Gemini API for:
 
 ---
 
-# 🧠 Learning Outcomes
+#  Learning Outcomes
 
 Through this project, the following skills were developed:
 
@@ -304,7 +308,7 @@ Through this project, the following skills were developed:
 
 ---
 
-# 👨‍💻 Use Cases
+#  Use Cases
 
 ## Farmers
 
@@ -325,7 +329,7 @@ Through this project, the following skills were developed:
 
 ---
 
-# 📌 Advantages
+#  Advantages
 
 * User-friendly interface
 * AI-powered assistance
@@ -336,7 +340,7 @@ Through this project, the following skills were developed:
 
 ---
 
-# 🔒 Non-Functional Requirements
+#  Non-Functional Requirements
 
 * High performance
 * Secure authentication
@@ -346,7 +350,7 @@ Through this project, the following skills were developed:
 
 ---
 
-# 🧪 Testing
+#  Testing
 
 The application was tested for:
 
@@ -359,27 +363,22 @@ The application was tested for:
 
 ---
 
-# 📚 References
+#  References
 
 * Android Developer Documentation
 * Firebase Documentation
 * Google Gemini API Documentation
 * Material Design Guidelines
 
----
-
-# 👥 Contributors
-
-Developed as an academic and innovative AI-based agriculture project.
 
 ---
 
-# 📄 License
+#  License
 
 This project is developed for educational and research purposes.
 
 ---
 
-# ✅ Conclusion
+#  Conclusion
 
 Siri-Dhanya Hub is a smart Android application that combines Artificial Intelligence and agriculture to support millet farmers and consumers. The project helps improve digital accessibility, agricultural awareness, and healthy food practices through AI-powered features, Firebase integration, and modern mobile technologies.
